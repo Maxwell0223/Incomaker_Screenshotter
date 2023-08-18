@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  my_python_app:
+    shm_size: 4gb
+    volumes:
+      -   ./app/app.py:/app/app.py
+      -   /etc/incomaker/s3.config:/app/s3.config
+    build:
+      context: .
+      args:
+        installChrome: "true" # Set to "true" or "false" as needed
+    # Add other service configurations as needed
+

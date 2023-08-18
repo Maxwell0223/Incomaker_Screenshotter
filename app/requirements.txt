@@ -1,0 +1,6 @@
+selenium
+webdriver_manager
+flask
+boto3
+numpy
+chromedriver-py
